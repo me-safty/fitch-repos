@@ -11,7 +11,7 @@ btn.addEventListener("click", () => {
   }
 });
 
-async function getData(): Promise<void> {
+async function getData(): Promise <void> {
   try {
     const response = await fetch(`https://api.github.com/users/${input.value}/repos`)
     const data = await response.json()
