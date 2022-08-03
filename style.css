@@ -15,16 +15,17 @@
 .header input[type="text"] {
   width: 100%;
   padding: 10px 15px;
-  border: 1px solid #ff5722
+  border: 1px solid #009688;
+  font-size: 20px;
 }
 .header input[type="text"]:focus {
-  outline: 2px solid #ff5722;
+  outline: 2px solid #009688;
   transition: .1s;
 }
 .header button {
   width: 161px;
   border: none;
-  background-color: #ff5722;
+  background-color: #009688;
   color: #fff;
   font-weight: bold;
   font-size: 17px;
@@ -36,6 +37,35 @@
   padding: 20px;
   background: #e5e5e5;
 }
-.data span {
+.data .repo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f6f6f6;
+  padding: 10px 15px;
+}
+.data .repo:not(:last-child) {
+  margin-bottom: 20px;
+}
+.data .repo img {
+  width: 40px;
+  border-radius: 50%;
+  border: 4px solid #c2c2c2;
+}
+.data .repo p {
+  width: 100%;
+  font-weight: 600;
+}
+.data .repo a:nth-of-type(1) {
 
+}
+.data .repo a:last-child {
+
+}
+.data .repo a {
+  text-decoration: none;
+  background-color: #009688;
+  color: #fff;
+  padding: 5px 13px;
+  border-radius: 6px;
 }
